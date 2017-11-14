@@ -31,7 +31,6 @@ void skip_line(void) {
 	buff[0] = 0;
 }
 
-
 static bool IS_NUMBER(char c) {
 	return c >= '0' && c <='9';
 }
@@ -110,7 +109,6 @@ void read_next_token(void) {
 		next_token_type = NAME;
 	}
 }
-
 
 const char* next_token(void) {
 	return token;
