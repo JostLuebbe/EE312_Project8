@@ -3,7 +3,6 @@
 #include <assert.h>
 #include "Parse.h"
 
-
 TokenType next_token_type = INVALID;
 int32_t token_number_value = 0;
 
@@ -35,12 +34,16 @@ static bool IS_NUMBER(char c) {
 	return c >= '0' && c <='9';
 }
 
+static bool IS_KEYWORD(const String word) {
+    return (word == "text") || (word == "output") || (word == "var") || (word == "set");
+}
+
 static bool IS_LETTER(char c) {
 	return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
 }
 
 static bool IS_SPACE(char c) {
-	return c == ' ' || c == '\t' || c == '\n';
+	return c == ' ' || c == '\t' || c == '\n' || c == '\r';
 }
 
 static bool token_has_been_peeked = false;
@@ -103,18 +106,20 @@ void read_next_token(void) {
 	if (IS_NUMBER(token[0])) {
 		next_token_type = NUMBER;
 		token_number_value = atoi(token);
-	} else if (! IS_LETTER(token[0])) {
-		next_token_type = SYMBOL;
-	} else {
-		next_token_type = NAME;
-	}
+	} else if (!IS_LETTER(token[0])) {
+        next_token_type = SYMBOL;
+    } else if(IS_KEYWORD(String(token))){
+        next_token_type = KEYWORD;
+    } else{
+        next_token_type = STRING;
+    }
 }
 
-const char* next_token(void) {
-	return token;
+String next_token() {
+	return String(token);
 }
 
-const char* peek_next_token(void) {
+String peek_next_token() {
 	read_next_token();
 	token_has_been_peeked = true;
 	return next_token();

@@ -1,4 +1,4 @@
-C:\Users\jostl\.CLion2017.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project8"
+C:\Users\jostl\.CLion2017.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project8/cmake-build-debug
+-- Build files have been written to: /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/cmake-build-debug

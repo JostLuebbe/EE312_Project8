@@ -1,17 +1,17 @@
 #ifndef _Parse_h
 #define _Parse_h 1
-
+#include "String.h"
 #include <stdint.h>
+
+
 enum TokenType {
 	NUMBER,
 	SYMBOL,
-	KEYWORD, // not currently used or supported by Parse.h/Input.cpp
-	NAME,
-	STRING,  // not currently used or supported by Parse.h/Input.cpp
-
-	END, // special marker for end of input
-
-	INVALID // this token type should never appear and represents a parsing error
+	NAME, // not currently used
+    KEYWORD,
+    STRING,
+    END, // special marker for end of input
+	INVALID, // this token type should never appear and represents a parsing error
 };
 
 /* The next_token_type global variable identifies the type of the most recently read
@@ -35,7 +35,7 @@ extern int32_t token_number_value;
  * NOTE: the token "//" is an actual token in Blip with type "SYMBOL". You must parse
  * this token and the comment that it precedes.
  */
-const char* next_token(void);
+String next_token(void);
 
 /* the skip_line function forces the input to ignore the remainder of the current line of
  * input. In ordinary usage, read_next_token() ignores spaces, tabs and line breaks. However
@@ -63,7 +63,7 @@ void read_next_token(void);
  * In other words, the peek function let's you look at the next token that will be read when
  * read_next_token is called, without actually read (and removing) that token from the input
  */
-const char* peek_next_token(void);
+String peek_next_token(void);
 
 
 #endif /* _Parse_h */
