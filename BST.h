@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+
 #include <iostream>
 #include "String.h"
 #include <assert.h>
@@ -209,7 +208,7 @@ public:
 			}
 		}	// while loop exits when p->left or p->right = null ptr
 		if(name == parent->var_name){
-			assert(parent->left != nullptr);
+			assert(parent != nullptr);
 			parent->value = x;
 			delete child;
 		}else if (name < parent->var_name) {

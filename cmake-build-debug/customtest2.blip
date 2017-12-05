@@ -1,0 +1,6 @@
+output + ~ + 5 3 13
+text \n
+var x 5
+set y 13
+output + ~ + x 3 y
+text \n

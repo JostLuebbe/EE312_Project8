@@ -7,10 +7,6 @@
 #IncludeRegexTransform: 
 
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/BST.h
-stdio.h
--
-stdlib.h
--
 iostream
 -
 String.h
@@ -21,8 +17,6 @@ assert.h
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/ExpTree.cpp
 ExpTree.h
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/ExpTree.h
-String.h
-/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/String.h
 
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/ExpTree.h
 vector
@@ -37,16 +31,22 @@ stdio.h
 -
 stdlib.h
 -
-assert.h
--
 Parse.h
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Parse.h
 
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Parse.h
 String.h
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/String.h
-stdint.h
--
+
+/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Project8.cpp
+Parse.h
+/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Parse.h
+BST.h
+/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/BST.h
+ExpTree.h
+/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/ExpTree.h
+
+/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Project8.h
 
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/String.h
 stdlib.h
@@ -57,16 +57,8 @@ stdint.h
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/main.cpp
 Parse.h
 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Parse.h
-stdio.h
--
-stdlib.h
--
+Project8.h
+/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Project8.h
 iostream
 -
-String.h
-/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/String.h
-BST.h
-/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/BST.h
-ExpTree.h
-/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/ExpTree.h
 

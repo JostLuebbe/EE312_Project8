@@ -177,6 +177,33 @@ Input.cpp.s:
 	$(MAKE) -f CMakeFiles/Project8.dir/build.make CMakeFiles/Project8.dir/Input.cpp.s
 .PHONY : Input.cpp.s
 
+Project8.o: Project8.cpp.o
+
+.PHONY : Project8.o
+
+# target to build an object file
+Project8.cpp.o:
+	$(MAKE) -f CMakeFiles/Project8.dir/build.make CMakeFiles/Project8.dir/Project8.cpp.o
+.PHONY : Project8.cpp.o
+
+Project8.i: Project8.cpp.i
+
+.PHONY : Project8.i
+
+# target to preprocess a source file
+Project8.cpp.i:
+	$(MAKE) -f CMakeFiles/Project8.dir/build.make CMakeFiles/Project8.dir/Project8.cpp.i
+.PHONY : Project8.cpp.i
+
+Project8.s: Project8.cpp.s
+
+.PHONY : Project8.s
+
+# target to generate assembly for a file
+Project8.cpp.s:
+	$(MAKE) -f CMakeFiles/Project8.dir/build.make CMakeFiles/Project8.dir/Project8.cpp.s
+.PHONY : Project8.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -219,6 +246,9 @@ help:
 	@echo "... Input.o"
 	@echo "... Input.i"
 	@echo "... Input.s"
+	@echo "... Project8.o"
+	@echo "... Project8.i"
+	@echo "... Project8.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -95,6 +95,12 @@
 		<Unit filename="/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Parse.h">
 			<Option target="Project8"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Project8.cpp">
+			<Option target="Project8"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/Project8.h">
+			<Option target="Project8"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project8/String.h">
 			<Option target="Project8"/>
 		</Unit>

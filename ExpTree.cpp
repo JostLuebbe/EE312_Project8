@@ -1,5 +1,4 @@
 #include "ExpTree.h"
-#include "String.h"
 
 ExpTree::ExpTree(vector<Node*>& expr) { // construct from expression vector
     overallRoot = add(overallRoot, expr);
@@ -68,9 +67,9 @@ int operate(String optr, int arg1, int arg2){
     } else if(optr == ">="){
         return arg1 >= arg2;
     } else if(optr == "!"){
-        return (!arg1);
+        return (!arg2);
     } else if(optr == "~"){
-        return arg1 * -1;
+        return arg2 * -1;
     }
 }
 

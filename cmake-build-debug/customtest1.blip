@@ -1,0 +1,9 @@
+var x 42
+output x
+text \n
+set x 34
+output x
+text \n
+set y 23
+output y
+text \n

@@ -1,0 +1,53 @@
+var x - * / 15 - 7 + 1 1 3 + 2 + 1 1 set y ~ x output x
+		text \n     output y
+					text \n
+					text \n
+// sdfasdfasdfasdf
+text "HELLO EVERYONE" // sadfsadf
+var t 54
+output t
+set t ~ 54
+output * t 2
+output ~ t
+text \n
+text + text - text 2 text 3 text 4
+text \n
+output + - 2 3 4
+set b 1
+text "warning should have been produced \n"
+var x ! 0
+var y ~ 4
+set x 2
+text Heya
+text \n
+// output 33
+text "33 should not have been outputted"
+text \n
+text "should be 2 -- "
+output ~ + x - % 4 3 5
+text \n
+text "should be 1 -- "
+output % + x ~ y 5
+text \n
+set z 36
+text "warning should have been produced \n"
+set x 8
+var a 12
+text "should be 1 -- "
+output ! - + x 7 + a 3
+text \n
+// text this line should be skipped
+var y 1
+text "warning should have been produced \n"
+text "should be -3 -- "
+output / ~ z a
+text \n
+text "should be 1 -- "
+output * b y
+set y ~ 1
+text "should be 56 -- "
+output + + + +  a
+b
+ x
+y
+z

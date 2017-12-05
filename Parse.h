@@ -1,8 +1,4 @@
-#ifndef _Parse_h
-#define _Parse_h 1
 #include "String.h"
-#include <stdint.h>
-
 
 enum TokenType {
 	NUMBER,
@@ -24,7 +20,7 @@ extern TokenType next_token_type;
  * will be set to the numeric value of the token. Note that only integer values are
  * supported (in fact, only positive integers are supported presently)
  */
-extern int32_t token_number_value;
+extern int token_number_value;
 
 /* the next_token function returns a pointer to a null-terminated string that repesents
  * the actual raw token. When next_token_type is equal to NUMBER, the next_token string
@@ -64,6 +60,3 @@ void read_next_token(void);
  * read_next_token is called, without actually read (and removing) that token from the input
  */
 String peek_next_token(void);
-
-
-#endif /* _Parse_h */

@@ -2,7 +2,6 @@
 #define _String_h
 #include <stdlib.h>
 #include <stdint.h>
-// #include "MemHeap.h"
 
 struct String {
 private:
@@ -105,7 +104,7 @@ private:
 
 	/* destroy(void) is my "real" destructor. I always name this function destroy and my official destructor is always
 	 * just a simple one-line call to this function */
-	void destroy(void) {
+	void destroy() {
 		free(ptr);
 	}
 };

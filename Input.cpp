@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
 #include "Parse.h"
 
 TokenType next_token_type = INVALID;
+
 int32_t token_number_value = 0;
 
 FILE* input_source = stdin;
